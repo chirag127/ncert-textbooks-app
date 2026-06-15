@@ -40,7 +40,6 @@
 ## Project Structure
 
 ```
-ncert-library/
 ├── apps/
 │   ├── website/          # Astro website
 │   └── docs/             # Documentation site

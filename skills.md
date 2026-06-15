@@ -52,4 +52,34 @@ General
   dogfood                            ~\AppData\Local\hermes\skills\dogfood                           Agents: Hermes Agent
   yuanbao                            ~\AppData\Local\hermes\skills\yuanbao                           Agents: Hermes Agent
 
-PS C:\AM\GitHub\NCERT\ncert-library\apps\website> 
+PS C:\AM\GitHub\NCERT\ncert-library\apps\website>
+
+## Installation guide
+
+Use the `skills` CLI from Vercel Labs. The installed global skills above come from `vercel-labs/agent-skills`.
+
+Fastest global install for all supported agents:
+
+```powershell
+npx skills add vercel-labs/agent-skills --all -g -y
+```
+
+Fastest global + project install:
+
+```powershell
+npx skills add vercel-labs/agent-skills --all -g -y
+npx skills add vercel-labs/agent-skills --all -y
+```
+
+Reusable PowerShell installer in this repo:
+
+```powershell
+pwsh tools/scripts/install-agent-skills.ps1 -DryRun
+pwsh tools/scripts/install-agent-skills.ps1
+pwsh tools/scripts/install-agent-skills.ps1 -ProjectToo
+pwsh tools/scripts/install-agent-skills.ps1 -Individual
+pwsh tools/scripts/install-agent-skills.ps1 -Copy
+pwsh tools/scripts/install-agent-skills.ps1 -UpdateOnly
+```
+
+The script installs the skills listed in this file globally by default. Use `-ProjectToo` to also install them into the current project. Use `-Individual` if you want one `npx skills add` command per skill/agent. Use `-Copy` if symlinks are not supported in your environment.

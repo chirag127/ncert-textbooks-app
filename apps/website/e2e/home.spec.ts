@@ -33,6 +33,7 @@ test.describe('NCERT Library Website', () => {
   test('should have dark mode support', async ({ page }) => {
     await page.goto('/');
     const html = page.locator('html');
-    await expect(html).toHaveClass(/dark/).or(html).not.toHaveClass(/dark/);
+    const className = await html.getAttribute('class');
+    expect(className).toMatch(/dark/);
   });
 });
