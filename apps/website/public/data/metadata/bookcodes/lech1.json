@@ -1,0 +1,69 @@
+{
+  "bookCode": "lech1",
+  "class": "class-12",
+  "subject": "chemistry",
+  "language": "english",
+  "title": "Chemistry Part I",
+  "subtitle": "Textbook for Class XII",
+  "editionYear": 2023,
+  "numberOfChapters": 5,
+  "chapterNames": [
+    "The Solid State",
+    "Solutions",
+    "Electrochemistry",
+    "Chemical Kinetics",
+    "Surface Chemistry"
+  ],
+  "chapterUrls": [
+    "https://ncert.nic.in/textbook/pdf/lech101.pdf",
+    "https://ncert.nic.in/textbook/pdf/lech102.pdf",
+    "https://ncert.nic.in/textbook/pdf/lech103.pdf",
+    "https://ncert.nic.in/textbook/pdf/lech104.pdf",
+    "https://ncert.nic.in/textbook/pdf/lech105.pdf"
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "name": "The Solid State",
+      "url": "https://ncert.nic.in/textbook/pdf/lech101.pdf"
+    },
+    {
+      "number": 2,
+      "name": "Solutions",
+      "url": "https://ncert.nic.in/textbook/pdf/lech102.pdf"
+    },
+    {
+      "number": 3,
+      "name": "Electrochemistry",
+      "url": "https://ncert.nic.in/textbook/pdf/lech103.pdf"
+    },
+    {
+      "number": 4,
+      "name": "Chemical Kinetics",
+      "url": "https://ncert.nic.in/textbook/pdf/lech104.pdf"
+    },
+    {
+      "number": 5,
+      "name": "Surface Chemistry",
+      "url": "https://ncert.nic.in/textbook/pdf/lech105.pdf"
+    }
+  ],
+  "pageCount": 240,
+  "tags": ["chemistry", "class-12", "ncert", "cbse", "physical-chemistry"],
+  "keywords": [
+    "chemistry",
+    "class 12",
+    "ncert",
+    "solid state",
+    "solutions",
+    "electrochemistry",
+    "chemical kinetics",
+    "surface chemistry"
+  ],
+  "description": "NCERT Chemistry textbook for Class XII Part I. Covers the solid state, solutions, electrochemistry, chemical kinetics, and surface chemistry. Published by the National Council of Educational Research and Training.",
+  "ncertClassCode": 12,
+  "ncertBookCode": 1,
+  "lastUpdated": "2024-04-01T00:00:00Z",
+  "isRationalised": false,
+  "downloadUrl": "https://ncert.nic.in/textbook/pdf/lech1.pdf"
+}

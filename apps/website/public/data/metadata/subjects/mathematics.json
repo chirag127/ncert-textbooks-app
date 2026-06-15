@@ -1,0 +1,276 @@
+{
+  "subject": "mathematics",
+  "books": [
+    {
+      "bookCode": "hemh1",
+      "class": "class-12",
+      "subject": "mathematics",
+      "language": "english",
+      "title": "Mathematics Part I",
+      "subtitle": "Textbook for Class XII",
+      "editionYear": 2023,
+      "numberOfChapters": 6,
+      "chapterNames": [
+        "Relations and Functions",
+        "Inverse Trigonometric Functions",
+        "Matrices",
+        "Determinants",
+        "Continuity and Differentiability",
+        "Applications of Derivatives"
+      ],
+      "chapterUrls": [
+        "https://ncert.nic.in/textbook/pdf/lemh101.pdf",
+        "https://ncert.nic.in/textbook/pdf/lemh102.pdf",
+        "https://ncert.nic.in/textbook/pdf/lemh103.pdf",
+        "https://ncert.nic.in/textbook/pdf/lemh104.pdf",
+        "https://ncert.nic.in/textbook/pdf/lemh105.pdf",
+        "https://ncert.nic.in/textbook/pdf/lemh106.pdf"
+      ],
+      "chapters": [
+        {
+          "number": 1,
+          "name": "Relations and Functions",
+          "url": "https://ncert.nic.in/textbook/pdf/lemh101.pdf"
+        },
+        {
+          "number": 2,
+          "name": "Inverse Trigonometric Functions",
+          "url": "https://ncert.nic.in/textbook/pdf/lemh102.pdf"
+        },
+        {
+          "number": 3,
+          "name": "Matrices",
+          "url": "https://ncert.nic.in/textbook/pdf/lemh103.pdf"
+        },
+        {
+          "number": 4,
+          "name": "Determinants",
+          "url": "https://ncert.nic.in/textbook/pdf/lemh104.pdf"
+        },
+        {
+          "number": 5,
+          "name": "Continuity and Differentiability",
+          "url": "https://ncert.nic.in/textbook/pdf/lemh105.pdf"
+        },
+        {
+          "number": 6,
+          "name": "Applications of Derivatives",
+          "url": "https://ncert.nic.in/textbook/pdf/lemh106.pdf"
+        }
+      ],
+      "coverImage": "https://ncert.nic.in/textbook/cover/lemh1.jpg",
+      "pageCount": 280,
+      "fileSize": 5242880,
+      "sha256": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
+      "tags": [
+        "mathematics",
+        "class-12",
+        "ncert",
+        "cbse",
+        "calculus",
+        "algebra"
+      ],
+      "keywords": [
+        "mathematics",
+        "maths",
+        "class 12",
+        "ncert",
+        "relations",
+        "matrices",
+        "determinants",
+        "calculus",
+        "derivatives"
+      ],
+      "description": "NCERT Mathematics textbook for Class XII Part I. Covers relations and functions, inverse trigonometric functions, matrices, determinants, continuity and differentiability, and applications of derivatives. Published by the National Council of Educational Research and Training.",
+      "ncertClassCode": 12,
+      "ncertBookCode": 1,
+      "lastUpdated": "2024-04-01T00:00:00Z",
+      "isRationalised": false,
+      "downloadUrl": "https://ncert.nic.in/textbook/pdf/lemh1.pdf"
+    },
+    {
+      "bookCode": "jemh1",
+      "class": "class-10",
+      "subject": "mathematics",
+      "language": "english",
+      "title": "Mathematics",
+      "subtitle": "Textbook for Class X",
+      "editionYear": 2023,
+      "numberOfChapters": 8,
+      "chapterNames": [
+        "Real Numbers",
+        "Polynomials",
+        "Pair of Linear Equations in Two Variables",
+        "Quadratic Equations",
+        "Arithmetic Progressions",
+        "Triangles",
+        "Coordinate Geometry",
+        "Introduction to Trigonometry"
+      ],
+      "chapterUrls": [
+        "https://ncert.nic.in/textbook/pdf/jemh101.pdf",
+        "https://ncert.nic.in/textbook/pdf/jemh102.pdf",
+        "https://ncert.nic.in/textbook/pdf/jemh103.pdf",
+        "https://ncert.nic.in/textbook/pdf/jemh104.pdf",
+        "https://ncert.nic.in/textbook/pdf/jemh105.pdf",
+        "https://ncert.nic.in/textbook/pdf/jemh106.pdf",
+        "https://ncert.nic.in/textbook/pdf/jemh107.pdf",
+        "https://ncert.nic.in/textbook/pdf/jemh108.pdf"
+      ],
+      "chapters": [
+        {
+          "number": 1,
+          "name": "Real Numbers",
+          "url": "https://ncert.nic.in/textbook/pdf/jemh101.pdf"
+        },
+        {
+          "number": 2,
+          "name": "Polynomials",
+          "url": "https://ncert.nic.in/textbook/pdf/jemh102.pdf"
+        },
+        {
+          "number": 3,
+          "name": "Pair of Linear Equations in Two Variables",
+          "url": "https://ncert.nic.in/textbook/pdf/jemh103.pdf"
+        },
+        {
+          "number": 4,
+          "name": "Quadratic Equations",
+          "url": "https://ncert.nic.in/textbook/pdf/jemh104.pdf"
+        },
+        {
+          "number": 5,
+          "name": "Arithmetic Progressions",
+          "url": "https://ncert.nic.in/textbook/pdf/jemh105.pdf"
+        },
+        {
+          "number": 6,
+          "name": "Triangles",
+          "url": "https://ncert.nic.in/textbook/pdf/jemh106.pdf"
+        },
+        {
+          "number": 7,
+          "name": "Coordinate Geometry",
+          "url": "https://ncert.nic.in/textbook/pdf/jemh107.pdf"
+        },
+        {
+          "number": 8,
+          "name": "Introduction to Trigonometry",
+          "url": "https://ncert.nic.in/textbook/pdf/jemh108.pdf"
+        }
+      ],
+      "pageCount": 340,
+      "tags": [
+        "mathematics",
+        "class-10",
+        "ncert",
+        "cbse",
+        "algebra",
+        "geometry",
+        "trigonometry"
+      ],
+      "keywords": [
+        "mathematics",
+        "maths",
+        "class 10",
+        "ncert",
+        "real numbers",
+        "polynomials",
+        "quadratic equations",
+        "trigonometry",
+        "coordinate geometry"
+      ],
+      "description": "NCERT Mathematics textbook for Class X. Covers real numbers, polynomials, linear equations, quadratic equations, arithmetic progressions, triangles, coordinate geometry, and trigonometry. Published by the National Council of Educational Research and Training.",
+      "ncertClassCode": 10,
+      "ncertBookCode": 1,
+      "lastUpdated": "2024-04-01T00:00:00Z",
+      "isRationalised": false,
+      "downloadUrl": "https://ncert.nic.in/textbook/pdf/jemh1.pdf"
+    },
+    {
+      "bookCode": "iemh1",
+      "class": "class-9",
+      "subject": "mathematics",
+      "language": "english",
+      "title": "Mathematics",
+      "subtitle": "Textbook for Class IX",
+      "editionYear": 2023,
+      "numberOfChapters": 6,
+      "chapterNames": [
+        "Number Systems",
+        "Polynomials",
+        "Coordinate Geometry",
+        "Linear Equations in Two Variables",
+        "Introduction to Euclid's Geometry",
+        "Lines and Angles"
+      ],
+      "chapterUrls": [
+        "https://ncert.nic.in/textbook/pdf/iemh101.pdf",
+        "https://ncert.nic.in/textbook/pdf/iemh102.pdf",
+        "https://ncert.nic.in/textbook/pdf/iemh103.pdf",
+        "https://ncert.nic.in/textbook/pdf/iemh104.pdf",
+        "https://ncert.nic.in/textbook/pdf/iemh105.pdf",
+        "https://ncert.nic.in/textbook/pdf/iemh106.pdf"
+      ],
+      "chapters": [
+        {
+          "number": 1,
+          "name": "Number Systems",
+          "url": "https://ncert.nic.in/textbook/pdf/iemh101.pdf"
+        },
+        {
+          "number": 2,
+          "name": "Polynomials",
+          "url": "https://ncert.nic.in/textbook/pdf/iemh102.pdf"
+        },
+        {
+          "number": 3,
+          "name": "Coordinate Geometry",
+          "url": "https://ncert.nic.in/textbook/pdf/iemh103.pdf"
+        },
+        {
+          "number": 4,
+          "name": "Linear Equations in Two Variables",
+          "url": "https://ncert.nic.in/textbook/pdf/iemh104.pdf"
+        },
+        {
+          "number": 5,
+          "name": "Introduction to Euclid's Geometry",
+          "url": "https://ncert.nic.in/textbook/pdf/iemh105.pdf"
+        },
+        {
+          "number": 6,
+          "name": "Lines and Angles",
+          "url": "https://ncert.nic.in/textbook/pdf/iemh106.pdf"
+        }
+      ],
+      "pageCount": 300,
+      "tags": [
+        "mathematics",
+        "class-9",
+        "ncert",
+        "cbse",
+        "algebra",
+        "geometry"
+      ],
+      "keywords": [
+        "mathematics",
+        "maths",
+        "class 9",
+        "ncert",
+        "number systems",
+        "polynomials",
+        "coordinate geometry",
+        "euclid",
+        "lines and angles"
+      ],
+      "description": "NCERT Mathematics textbook for Class IX. Covers number systems, polynomials, coordinate geometry, linear equations, Euclid's geometry, and lines and angles. Published by the National Council of Educational Research and Training.",
+      "ncertClassCode": 9,
+      "ncertBookCode": 1,
+      "lastUpdated": "2024-04-01T00:00:00Z",
+      "isRationalised": false,
+      "downloadUrl": "https://ncert.nic.in/textbook/pdf/iemh1.pdf"
+    }
+  ],
+  "displayName": "Mathematics"
+}

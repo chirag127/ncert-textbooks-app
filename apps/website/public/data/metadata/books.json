@@ -1,0 +1,655 @@
+[
+  {
+    "bookCode": "hemh1",
+    "class": "class-12",
+    "subject": "mathematics",
+    "language": "english",
+    "title": "Mathematics Part I",
+    "subtitle": "Textbook for Class XII",
+    "editionYear": 2023,
+    "numberOfChapters": 6,
+    "chapterNames": [
+      "Relations and Functions",
+      "Inverse Trigonometric Functions",
+      "Matrices",
+      "Determinants",
+      "Continuity and Differentiability",
+      "Applications of Derivatives"
+    ],
+    "chapterUrls": [
+      "https://ncert.nic.in/textbook/pdf/lemh101.pdf",
+      "https://ncert.nic.in/textbook/pdf/lemh102.pdf",
+      "https://ncert.nic.in/textbook/pdf/lemh103.pdf",
+      "https://ncert.nic.in/textbook/pdf/lemh104.pdf",
+      "https://ncert.nic.in/textbook/pdf/lemh105.pdf",
+      "https://ncert.nic.in/textbook/pdf/lemh106.pdf"
+    ],
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Relations and Functions",
+        "url": "https://ncert.nic.in/textbook/pdf/lemh101.pdf"
+      },
+      {
+        "number": 2,
+        "name": "Inverse Trigonometric Functions",
+        "url": "https://ncert.nic.in/textbook/pdf/lemh102.pdf"
+      },
+      {
+        "number": 3,
+        "name": "Matrices",
+        "url": "https://ncert.nic.in/textbook/pdf/lemh103.pdf"
+      },
+      {
+        "number": 4,
+        "name": "Determinants",
+        "url": "https://ncert.nic.in/textbook/pdf/lemh104.pdf"
+      },
+      {
+        "number": 5,
+        "name": "Continuity and Differentiability",
+        "url": "https://ncert.nic.in/textbook/pdf/lemh105.pdf"
+      },
+      {
+        "number": 6,
+        "name": "Applications of Derivatives",
+        "url": "https://ncert.nic.in/textbook/pdf/lemh106.pdf"
+      }
+    ],
+    "coverImage": "https://ncert.nic.in/textbook/cover/lemh1.jpg",
+    "pageCount": 280,
+    "fileSize": 5242880,
+    "sha256": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
+    "tags": ["mathematics", "class-12", "ncert", "cbse", "calculus", "algebra"],
+    "keywords": [
+      "mathematics",
+      "maths",
+      "class 12",
+      "ncert",
+      "relations",
+      "matrices",
+      "determinants",
+      "calculus",
+      "derivatives"
+    ],
+    "description": "NCERT Mathematics textbook for Class XII Part I. Covers relations and functions, inverse trigonometric functions, matrices, determinants, continuity and differentiability, and applications of derivatives. Published by the National Council of Educational Research and Training.",
+    "ncertClassCode": 12,
+    "ncertBookCode": 1,
+    "lastUpdated": "2024-04-01T00:00:00Z",
+    "isRationalised": false,
+    "downloadUrl": "https://ncert.nic.in/textbook/pdf/lemh1.pdf"
+  },
+  {
+    "bookCode": "leph1",
+    "class": "class-12",
+    "subject": "physics",
+    "language": "english",
+    "title": "Physics Part I",
+    "subtitle": "Textbook for Class XII",
+    "editionYear": 2023,
+    "numberOfChapters": 8,
+    "chapterNames": [
+      "Electric Charges and Fields",
+      "Electrostatic Potential and Capacitance",
+      "Current Electricity",
+      "Moving Charges and Magnetism",
+      "Magnetism and Matter",
+      "Electromagnetic Induction",
+      "Alternating Current",
+      "Electromagnetic Waves"
+    ],
+    "chapterUrls": [
+      "https://ncert.nic.in/textbook/pdf/leph101.pdf",
+      "https://ncert.nic.in/textbook/pdf/leph102.pdf",
+      "https://ncert.nic.in/textbook/pdf/leph103.pdf",
+      "https://ncert.nic.in/textbook/pdf/leph104.pdf",
+      "https://ncert.nic.in/textbook/pdf/leph105.pdf",
+      "https://ncert.nic.in/textbook/pdf/leph106.pdf",
+      "https://ncert.nic.in/textbook/pdf/leph107.pdf",
+      "https://ncert.nic.in/textbook/pdf/leph108.pdf"
+    ],
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Electric Charges and Fields",
+        "url": "https://ncert.nic.in/textbook/pdf/leph101.pdf"
+      },
+      {
+        "number": 2,
+        "name": "Electrostatic Potential and Capacitance",
+        "url": "https://ncert.nic.in/textbook/pdf/leph102.pdf"
+      },
+      {
+        "number": 3,
+        "name": "Current Electricity",
+        "url": "https://ncert.nic.in/textbook/pdf/leph103.pdf"
+      },
+      {
+        "number": 4,
+        "name": "Moving Charges and Magnetism",
+        "url": "https://ncert.nic.in/textbook/pdf/leph104.pdf"
+      },
+      {
+        "number": 5,
+        "name": "Magnetism and Matter",
+        "url": "https://ncert.nic.in/textbook/pdf/leph105.pdf"
+      },
+      {
+        "number": 6,
+        "name": "Electromagnetic Induction",
+        "url": "https://ncert.nic.in/textbook/pdf/leph106.pdf"
+      },
+      {
+        "number": 7,
+        "name": "Alternating Current",
+        "url": "https://ncert.nic.in/textbook/pdf/leph107.pdf"
+      },
+      {
+        "number": 8,
+        "name": "Electromagnetic Waves",
+        "url": "https://ncert.nic.in/textbook/pdf/leph108.pdf"
+      }
+    ],
+    "coverImage": "https://ncert.nic.in/textbook/cover/leph1.jpg",
+    "pageCount": 320,
+    "fileSize": 6291456,
+    "sha256": "b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3",
+    "tags": [
+      "physics",
+      "class-12",
+      "ncert",
+      "cbse",
+      "electricity",
+      "magnetism",
+      "waves"
+    ],
+    "keywords": [
+      "physics",
+      "class 12",
+      "ncert",
+      "electric charges",
+      "electrostatics",
+      "current electricity",
+      "magnetism",
+      "electromagnetic induction",
+      "alternating current"
+    ],
+    "description": "NCERT Physics textbook for Class XII Part I. Covers electrostatics, current electricity, magnetism, electromagnetic induction, alternating current, and electromagnetic waves. Published by the National Council of Educational Research and Training.",
+    "ncertClassCode": 12,
+    "ncertBookCode": 1,
+    "lastUpdated": "2024-04-01T00:00:00Z",
+    "isRationalised": false,
+    "downloadUrl": "https://ncert.nic.in/textbook/pdf/leph1.pdf"
+  },
+  {
+    "bookCode": "lech1",
+    "class": "class-12",
+    "subject": "chemistry",
+    "language": "english",
+    "title": "Chemistry Part I",
+    "subtitle": "Textbook for Class XII",
+    "editionYear": 2023,
+    "numberOfChapters": 5,
+    "chapterNames": [
+      "The Solid State",
+      "Solutions",
+      "Electrochemistry",
+      "Chemical Kinetics",
+      "Surface Chemistry"
+    ],
+    "chapterUrls": [
+      "https://ncert.nic.in/textbook/pdf/lech101.pdf",
+      "https://ncert.nic.in/textbook/pdf/lech102.pdf",
+      "https://ncert.nic.in/textbook/pdf/lech103.pdf",
+      "https://ncert.nic.in/textbook/pdf/lech104.pdf",
+      "https://ncert.nic.in/textbook/pdf/lech105.pdf"
+    ],
+    "chapters": [
+      {
+        "number": 1,
+        "name": "The Solid State",
+        "url": "https://ncert.nic.in/textbook/pdf/lech101.pdf"
+      },
+      {
+        "number": 2,
+        "name": "Solutions",
+        "url": "https://ncert.nic.in/textbook/pdf/lech102.pdf"
+      },
+      {
+        "number": 3,
+        "name": "Electrochemistry",
+        "url": "https://ncert.nic.in/textbook/pdf/lech103.pdf"
+      },
+      {
+        "number": 4,
+        "name": "Chemical Kinetics",
+        "url": "https://ncert.nic.in/textbook/pdf/lech104.pdf"
+      },
+      {
+        "number": 5,
+        "name": "Surface Chemistry",
+        "url": "https://ncert.nic.in/textbook/pdf/lech105.pdf"
+      }
+    ],
+    "pageCount": 240,
+    "tags": ["chemistry", "class-12", "ncert", "cbse", "physical-chemistry"],
+    "keywords": [
+      "chemistry",
+      "class 12",
+      "ncert",
+      "solid state",
+      "solutions",
+      "electrochemistry",
+      "chemical kinetics",
+      "surface chemistry"
+    ],
+    "description": "NCERT Chemistry textbook for Class XII Part I. Covers the solid state, solutions, electrochemistry, chemical kinetics, and surface chemistry. Published by the National Council of Educational Research and Training.",
+    "ncertClassCode": 12,
+    "ncertBookCode": 1,
+    "lastUpdated": "2024-04-01T00:00:00Z",
+    "isRationalised": false,
+    "downloadUrl": "https://ncert.nic.in/textbook/pdf/lech1.pdf"
+  },
+  {
+    "bookCode": "lebo1",
+    "class": "class-12",
+    "subject": "biology",
+    "language": "english",
+    "title": "Biology",
+    "subtitle": "Textbook for Class XII",
+    "editionYear": 2023,
+    "numberOfChapters": 6,
+    "chapterNames": [
+      "Reproduction in Organisms",
+      "Sexual Reproduction in Flowering Plants",
+      "Human Reproduction",
+      "Reproductive Health",
+      "Principles of Inheritance and Variation",
+      "Molecular Basis of Inheritance"
+    ],
+    "chapterUrls": [
+      "https://ncert.nic.in/textbook/pdf/lebo101.pdf",
+      "https://ncert.nic.in/textbook/pdf/lebo102.pdf",
+      "https://ncert.nic.in/textbook/pdf/lebo103.pdf",
+      "https://ncert.nic.in/textbook/pdf/lebo104.pdf",
+      "https://ncert.nic.in/textbook/pdf/lebo105.pdf",
+      "https://ncert.nic.in/textbook/pdf/lebo106.pdf"
+    ],
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Reproduction in Organisms",
+        "url": "https://ncert.nic.in/textbook/pdf/lebo101.pdf"
+      },
+      {
+        "number": 2,
+        "name": "Sexual Reproduction in Flowering Plants",
+        "url": "https://ncert.nic.in/textbook/pdf/lebo102.pdf"
+      },
+      {
+        "number": 3,
+        "name": "Human Reproduction",
+        "url": "https://ncert.nic.in/textbook/pdf/lebo103.pdf"
+      },
+      {
+        "number": 4,
+        "name": "Reproductive Health",
+        "url": "https://ncert.nic.in/textbook/pdf/lebo104.pdf"
+      },
+      {
+        "number": 5,
+        "name": "Principles of Inheritance and Variation",
+        "url": "https://ncert.nic.in/textbook/pdf/lebo105.pdf"
+      },
+      {
+        "number": 6,
+        "name": "Molecular Basis of Inheritance",
+        "url": "https://ncert.nic.in/textbook/pdf/lebo106.pdf"
+      }
+    ],
+    "pageCount": 260,
+    "tags": [
+      "biology",
+      "class-12",
+      "ncert",
+      "cbse",
+      "genetics",
+      "reproduction"
+    ],
+    "keywords": [
+      "biology",
+      "class 12",
+      "ncert",
+      "reproduction",
+      "genetics",
+      "inheritance",
+      "molecular biology"
+    ],
+    "description": "NCERT Biology textbook for Class XII. Covers reproduction in organisms, human reproduction, reproductive health, principles of inheritance, and molecular basis of inheritance. Published by the National Council of Educational Research and Training.",
+    "ncertClassCode": 12,
+    "ncertBookCode": 1,
+    "lastUpdated": "2024-04-01T00:00:00Z",
+    "isRationalised": false,
+    "downloadUrl": "https://ncert.nic.in/textbook/pdf/lebo1.pdf"
+  },
+  {
+    "bookCode": "jemh1",
+    "class": "class-10",
+    "subject": "mathematics",
+    "language": "english",
+    "title": "Mathematics",
+    "subtitle": "Textbook for Class X",
+    "editionYear": 2023,
+    "numberOfChapters": 8,
+    "chapterNames": [
+      "Real Numbers",
+      "Polynomials",
+      "Pair of Linear Equations in Two Variables",
+      "Quadratic Equations",
+      "Arithmetic Progressions",
+      "Triangles",
+      "Coordinate Geometry",
+      "Introduction to Trigonometry"
+    ],
+    "chapterUrls": [
+      "https://ncert.nic.in/textbook/pdf/jemh101.pdf",
+      "https://ncert.nic.in/textbook/pdf/jemh102.pdf",
+      "https://ncert.nic.in/textbook/pdf/jemh103.pdf",
+      "https://ncert.nic.in/textbook/pdf/jemh104.pdf",
+      "https://ncert.nic.in/textbook/pdf/jemh105.pdf",
+      "https://ncert.nic.in/textbook/pdf/jemh106.pdf",
+      "https://ncert.nic.in/textbook/pdf/jemh107.pdf",
+      "https://ncert.nic.in/textbook/pdf/jemh108.pdf"
+    ],
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Real Numbers",
+        "url": "https://ncert.nic.in/textbook/pdf/jemh101.pdf"
+      },
+      {
+        "number": 2,
+        "name": "Polynomials",
+        "url": "https://ncert.nic.in/textbook/pdf/jemh102.pdf"
+      },
+      {
+        "number": 3,
+        "name": "Pair of Linear Equations in Two Variables",
+        "url": "https://ncert.nic.in/textbook/pdf/jemh103.pdf"
+      },
+      {
+        "number": 4,
+        "name": "Quadratic Equations",
+        "url": "https://ncert.nic.in/textbook/pdf/jemh104.pdf"
+      },
+      {
+        "number": 5,
+        "name": "Arithmetic Progressions",
+        "url": "https://ncert.nic.in/textbook/pdf/jemh105.pdf"
+      },
+      {
+        "number": 6,
+        "name": "Triangles",
+        "url": "https://ncert.nic.in/textbook/pdf/jemh106.pdf"
+      },
+      {
+        "number": 7,
+        "name": "Coordinate Geometry",
+        "url": "https://ncert.nic.in/textbook/pdf/jemh107.pdf"
+      },
+      {
+        "number": 8,
+        "name": "Introduction to Trigonometry",
+        "url": "https://ncert.nic.in/textbook/pdf/jemh108.pdf"
+      }
+    ],
+    "pageCount": 340,
+    "tags": [
+      "mathematics",
+      "class-10",
+      "ncert",
+      "cbse",
+      "algebra",
+      "geometry",
+      "trigonometry"
+    ],
+    "keywords": [
+      "mathematics",
+      "maths",
+      "class 10",
+      "ncert",
+      "real numbers",
+      "polynomials",
+      "quadratic equations",
+      "trigonometry",
+      "coordinate geometry"
+    ],
+    "description": "NCERT Mathematics textbook for Class X. Covers real numbers, polynomials, linear equations, quadratic equations, arithmetic progressions, triangles, coordinate geometry, and trigonometry. Published by the National Council of Educational Research and Training.",
+    "ncertClassCode": 10,
+    "ncertBookCode": 1,
+    "lastUpdated": "2024-04-01T00:00:00Z",
+    "isRationalised": false,
+    "downloadUrl": "https://ncert.nic.in/textbook/pdf/jemh1.pdf"
+  },
+  {
+    "bookCode": "jesc1",
+    "class": "class-10",
+    "subject": "science",
+    "language": "english",
+    "title": "Science",
+    "subtitle": "Textbook for Class X",
+    "editionYear": 2023,
+    "numberOfChapters": 5,
+    "chapterNames": [
+      "Chemical Reactions and Equations",
+      "Acids, Bases and Salts",
+      "Metals and Non-metals",
+      "Carbon and its Compounds",
+      "Life Processes"
+    ],
+    "chapterUrls": [
+      "https://ncert.nic.in/textbook/pdf/jesc101.pdf",
+      "https://ncert.nic.in/textbook/pdf/jesc102.pdf",
+      "https://ncert.nic.in/textbook/pdf/jesc103.pdf",
+      "https://ncert.nic.in/textbook/pdf/jesc104.pdf",
+      "https://ncert.nic.in/textbook/pdf/jesc105.pdf"
+    ],
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Chemical Reactions and Equations",
+        "url": "https://ncert.nic.in/textbook/pdf/jesc101.pdf"
+      },
+      {
+        "number": 2,
+        "name": "Acids, Bases and Salts",
+        "url": "https://ncert.nic.in/textbook/pdf/jesc102.pdf"
+      },
+      {
+        "number": 3,
+        "name": "Metals and Non-metals",
+        "url": "https://ncert.nic.in/textbook/pdf/jesc103.pdf"
+      },
+      {
+        "number": 4,
+        "name": "Carbon and its Compounds",
+        "url": "https://ncert.nic.in/textbook/pdf/jesc104.pdf"
+      },
+      {
+        "number": 5,
+        "name": "Life Processes",
+        "url": "https://ncert.nic.in/textbook/pdf/jesc105.pdf"
+      }
+    ],
+    "pageCount": 280,
+    "tags": ["science", "class-10", "ncert", "cbse", "chemistry", "biology"],
+    "keywords": [
+      "science",
+      "class 10",
+      "ncert",
+      "chemical reactions",
+      "acids bases",
+      "carbon compounds",
+      "life processes"
+    ],
+    "description": "NCERT Science textbook for Class X. Covers chemical reactions, acids and bases, metals and non-metals, carbon compounds, and life processes. Published by the National Council of Educational Research and Training.",
+    "ncertClassCode": 10,
+    "ncertBookCode": 1,
+    "lastUpdated": "2024-04-01T00:00:00Z",
+    "isRationalised": false,
+    "downloadUrl": "https://ncert.nic.in/textbook/pdf/jesc1.pdf"
+  },
+  {
+    "bookCode": "iesc1",
+    "class": "class-9",
+    "subject": "science",
+    "language": "english",
+    "title": "Science",
+    "subtitle": "Textbook for Class IX",
+    "editionYear": 2023,
+    "numberOfChapters": 6,
+    "chapterNames": [
+      "Matter in Our Surroundings",
+      "Is Matter Around Us Pure?",
+      "Atoms and Molecules",
+      "Structure of the Atom",
+      "The Fundamental Unit of Life",
+      "Tissues"
+    ],
+    "chapterUrls": [
+      "https://ncert.nic.in/textbook/pdf/iesc101.pdf",
+      "https://ncert.nic.in/textbook/pdf/iesc102.pdf",
+      "https://ncert.nic.in/textbook/pdf/iesc103.pdf",
+      "https://ncert.nic.in/textbook/pdf/iesc104.pdf",
+      "https://ncert.nic.in/textbook/pdf/iesc105.pdf",
+      "https://ncert.nic.in/textbook/pdf/iesc106.pdf"
+    ],
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Matter in Our Surroundings",
+        "url": "https://ncert.nic.in/textbook/pdf/iesc101.pdf"
+      },
+      {
+        "number": 2,
+        "name": "Is Matter Around Us Pure?",
+        "url": "https://ncert.nic.in/textbook/pdf/iesc102.pdf"
+      },
+      {
+        "number": 3,
+        "name": "Atoms and Molecules",
+        "url": "https://ncert.nic.in/textbook/pdf/iesc103.pdf"
+      },
+      {
+        "number": 4,
+        "name": "Structure of the Atom",
+        "url": "https://ncert.nic.in/textbook/pdf/iesc104.pdf"
+      },
+      {
+        "number": 5,
+        "name": "The Fundamental Unit of Life",
+        "url": "https://ncert.nic.in/textbook/pdf/iesc105.pdf"
+      },
+      {
+        "number": 6,
+        "name": "Tissues",
+        "url": "https://ncert.nic.in/textbook/pdf/iesc106.pdf"
+      }
+    ],
+    "pageCount": 260,
+    "tags": ["science", "class-9", "ncert", "cbse", "chemistry", "biology"],
+    "keywords": [
+      "science",
+      "class 9",
+      "ncert",
+      "matter",
+      "atoms",
+      "molecules",
+      "cell",
+      "tissues"
+    ],
+    "description": "NCERT Science textbook for Class IX. Covers matter, atoms and molecules, the structure of the atom, the fundamental unit of life, and tissues. Published by the National Council of Educational Research and Training.",
+    "ncertClassCode": 9,
+    "ncertBookCode": 1,
+    "lastUpdated": "2024-04-01T00:00:00Z",
+    "isRationalised": false,
+    "downloadUrl": "https://ncert.nic.in/textbook/pdf/iesc1.pdf"
+  },
+  {
+    "bookCode": "iemh1",
+    "class": "class-9",
+    "subject": "mathematics",
+    "language": "english",
+    "title": "Mathematics",
+    "subtitle": "Textbook for Class IX",
+    "editionYear": 2023,
+    "numberOfChapters": 6,
+    "chapterNames": [
+      "Number Systems",
+      "Polynomials",
+      "Coordinate Geometry",
+      "Linear Equations in Two Variables",
+      "Introduction to Euclid's Geometry",
+      "Lines and Angles"
+    ],
+    "chapterUrls": [
+      "https://ncert.nic.in/textbook/pdf/iemh101.pdf",
+      "https://ncert.nic.in/textbook/pdf/iemh102.pdf",
+      "https://ncert.nic.in/textbook/pdf/iemh103.pdf",
+      "https://ncert.nic.in/textbook/pdf/iemh104.pdf",
+      "https://ncert.nic.in/textbook/pdf/iemh105.pdf",
+      "https://ncert.nic.in/textbook/pdf/iemh106.pdf"
+    ],
+    "chapters": [
+      {
+        "number": 1,
+        "name": "Number Systems",
+        "url": "https://ncert.nic.in/textbook/pdf/iemh101.pdf"
+      },
+      {
+        "number": 2,
+        "name": "Polynomials",
+        "url": "https://ncert.nic.in/textbook/pdf/iemh102.pdf"
+      },
+      {
+        "number": 3,
+        "name": "Coordinate Geometry",
+        "url": "https://ncert.nic.in/textbook/pdf/iemh103.pdf"
+      },
+      {
+        "number": 4,
+        "name": "Linear Equations in Two Variables",
+        "url": "https://ncert.nic.in/textbook/pdf/iemh104.pdf"
+      },
+      {
+        "number": 5,
+        "name": "Introduction to Euclid's Geometry",
+        "url": "https://ncert.nic.in/textbook/pdf/iemh105.pdf"
+      },
+      {
+        "number": 6,
+        "name": "Lines and Angles",
+        "url": "https://ncert.nic.in/textbook/pdf/iemh106.pdf"
+      }
+    ],
+    "pageCount": 300,
+    "tags": ["mathematics", "class-9", "ncert", "cbse", "algebra", "geometry"],
+    "keywords": [
+      "mathematics",
+      "maths",
+      "class 9",
+      "ncert",
+      "number systems",
+      "polynomials",
+      "coordinate geometry",
+      "euclid",
+      "lines and angles"
+    ],
+    "description": "NCERT Mathematics textbook for Class IX. Covers number systems, polynomials, coordinate geometry, linear equations, Euclid's geometry, and lines and angles. Published by the National Council of Educational Research and Training.",
+    "ncertClassCode": 9,
+    "ncertBookCode": 1,
+    "lastUpdated": "2024-04-01T00:00:00Z",
+    "isRationalised": false,
+    "downloadUrl": "https://ncert.nic.in/textbook/pdf/iemh1.pdf"
+  }
+]

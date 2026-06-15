@@ -1,0 +1,102 @@
+{
+  "bookCode": "leph1",
+  "class": "class-12",
+  "subject": "physics",
+  "language": "english",
+  "title": "Physics Part I",
+  "subtitle": "Textbook for Class XII",
+  "editionYear": 2023,
+  "numberOfChapters": 8,
+  "chapterNames": [
+    "Electric Charges and Fields",
+    "Electrostatic Potential and Capacitance",
+    "Current Electricity",
+    "Moving Charges and Magnetism",
+    "Magnetism and Matter",
+    "Electromagnetic Induction",
+    "Alternating Current",
+    "Electromagnetic Waves"
+  ],
+  "chapterUrls": [
+    "https://ncert.nic.in/textbook/pdf/leph101.pdf",
+    "https://ncert.nic.in/textbook/pdf/leph102.pdf",
+    "https://ncert.nic.in/textbook/pdf/leph103.pdf",
+    "https://ncert.nic.in/textbook/pdf/leph104.pdf",
+    "https://ncert.nic.in/textbook/pdf/leph105.pdf",
+    "https://ncert.nic.in/textbook/pdf/leph106.pdf",
+    "https://ncert.nic.in/textbook/pdf/leph107.pdf",
+    "https://ncert.nic.in/textbook/pdf/leph108.pdf"
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "name": "Electric Charges and Fields",
+      "url": "https://ncert.nic.in/textbook/pdf/leph101.pdf"
+    },
+    {
+      "number": 2,
+      "name": "Electrostatic Potential and Capacitance",
+      "url": "https://ncert.nic.in/textbook/pdf/leph102.pdf"
+    },
+    {
+      "number": 3,
+      "name": "Current Electricity",
+      "url": "https://ncert.nic.in/textbook/pdf/leph103.pdf"
+    },
+    {
+      "number": 4,
+      "name": "Moving Charges and Magnetism",
+      "url": "https://ncert.nic.in/textbook/pdf/leph104.pdf"
+    },
+    {
+      "number": 5,
+      "name": "Magnetism and Matter",
+      "url": "https://ncert.nic.in/textbook/pdf/leph105.pdf"
+    },
+    {
+      "number": 6,
+      "name": "Electromagnetic Induction",
+      "url": "https://ncert.nic.in/textbook/pdf/leph106.pdf"
+    },
+    {
+      "number": 7,
+      "name": "Alternating Current",
+      "url": "https://ncert.nic.in/textbook/pdf/leph107.pdf"
+    },
+    {
+      "number": 8,
+      "name": "Electromagnetic Waves",
+      "url": "https://ncert.nic.in/textbook/pdf/leph108.pdf"
+    }
+  ],
+  "coverImage": "https://ncert.nic.in/textbook/cover/leph1.jpg",
+  "pageCount": 320,
+  "fileSize": 6291456,
+  "sha256": "b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3",
+  "tags": [
+    "physics",
+    "class-12",
+    "ncert",
+    "cbse",
+    "electricity",
+    "magnetism",
+    "waves"
+  ],
+  "keywords": [
+    "physics",
+    "class 12",
+    "ncert",
+    "electric charges",
+    "electrostatics",
+    "current electricity",
+    "magnetism",
+    "electromagnetic induction",
+    "alternating current"
+  ],
+  "description": "NCERT Physics textbook for Class XII Part I. Covers electrostatics, current electricity, magnetism, electromagnetic induction, alternating current, and electromagnetic waves. Published by the National Council of Educational Research and Training.",
+  "ncertClassCode": 12,
+  "ncertBookCode": 1,
+  "lastUpdated": "2024-04-01T00:00:00Z",
+  "isRationalised": false,
+  "downloadUrl": "https://ncert.nic.in/textbook/pdf/leph1.pdf"
+}

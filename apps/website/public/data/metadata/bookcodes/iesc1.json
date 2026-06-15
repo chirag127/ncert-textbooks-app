@@ -1,0 +1,76 @@
+{
+  "bookCode": "iesc1",
+  "class": "class-9",
+  "subject": "science",
+  "language": "english",
+  "title": "Science",
+  "subtitle": "Textbook for Class IX",
+  "editionYear": 2023,
+  "numberOfChapters": 6,
+  "chapterNames": [
+    "Matter in Our Surroundings",
+    "Is Matter Around Us Pure?",
+    "Atoms and Molecules",
+    "Structure of the Atom",
+    "The Fundamental Unit of Life",
+    "Tissues"
+  ],
+  "chapterUrls": [
+    "https://ncert.nic.in/textbook/pdf/iesc101.pdf",
+    "https://ncert.nic.in/textbook/pdf/iesc102.pdf",
+    "https://ncert.nic.in/textbook/pdf/iesc103.pdf",
+    "https://ncert.nic.in/textbook/pdf/iesc104.pdf",
+    "https://ncert.nic.in/textbook/pdf/iesc105.pdf",
+    "https://ncert.nic.in/textbook/pdf/iesc106.pdf"
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "name": "Matter in Our Surroundings",
+      "url": "https://ncert.nic.in/textbook/pdf/iesc101.pdf"
+    },
+    {
+      "number": 2,
+      "name": "Is Matter Around Us Pure?",
+      "url": "https://ncert.nic.in/textbook/pdf/iesc102.pdf"
+    },
+    {
+      "number": 3,
+      "name": "Atoms and Molecules",
+      "url": "https://ncert.nic.in/textbook/pdf/iesc103.pdf"
+    },
+    {
+      "number": 4,
+      "name": "Structure of the Atom",
+      "url": "https://ncert.nic.in/textbook/pdf/iesc104.pdf"
+    },
+    {
+      "number": 5,
+      "name": "The Fundamental Unit of Life",
+      "url": "https://ncert.nic.in/textbook/pdf/iesc105.pdf"
+    },
+    {
+      "number": 6,
+      "name": "Tissues",
+      "url": "https://ncert.nic.in/textbook/pdf/iesc106.pdf"
+    }
+  ],
+  "pageCount": 260,
+  "tags": ["science", "class-9", "ncert", "cbse", "chemistry", "biology"],
+  "keywords": [
+    "science",
+    "class 9",
+    "ncert",
+    "matter",
+    "atoms",
+    "molecules",
+    "cell",
+    "tissues"
+  ],
+  "description": "NCERT Science textbook for Class IX. Covers matter, atoms and molecules, the structure of the atom, the fundamental unit of life, and tissues. Published by the National Council of Educational Research and Training.",
+  "ncertClassCode": 9,
+  "ncertBookCode": 1,
+  "lastUpdated": "2024-04-01T00:00:00Z",
+  "isRationalised": false,
+  "downloadUrl": "https://ncert.nic.in/textbook/pdf/iesc1.pdf"
+}

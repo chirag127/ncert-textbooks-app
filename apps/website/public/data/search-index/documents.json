@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "totalBooks": 8,
+  "documents": [
+    {
+      "tags": [
+        "mathematics",
+        "class-12",
+        "ncert",
+        "cbse",
+        "calculus",
+        "algebra"
+      ],
+      "bookCode": "hemh1",
+      "className": "class-12",
+      "editionYear": 2023,
+      "subject": "mathematics",
+      "description": "NCERT Mathematics textbook for Class XII Part I. Covers relations and functions, inverse trigonometric functions, matrices, determinants, continuity and differentiability, and applications of derivatives. Published by the National Council of Educational Research and Training.",
+      "chapterNames": [
+        "Relations and Functions",
+        "Inverse Trigonometric Functions",
+        "Matrices",
+        "Determinants",
+        "Continuity and Differentiability",
+        "Applications of Derivatives"
+      ],
+      "language": "english",
+      "id": "hemh1",
+      "keywords": [
+        "mathematics",
+        "maths",
+        "class 12",
+        "ncert",
+        "relations",
+        "matrices",
+        "determinants",
+        "calculus",
+        "derivatives"
+      ],
+      "title": "Mathematics Part I"
+    },
+    {
+      "tags": [
+        "physics",
+        "class-12",
+        "ncert",
+        "cbse",
+        "electricity",
+        "magnetism",
+        "waves"
+      ],
+      "bookCode": "leph1",
+      "className": "class-12",
+      "editionYear": 2023,
+      "subject": "physics",
+      "description": "NCERT Physics textbook for Class XII Part I. Covers electrostatics, current electricity, magnetism, electromagnetic induction, alternating current, and electromagnetic waves. Published by the National Council of Educational Research and Training.",
+      "chapterNames": [
+        "Electric Charges and Fields",
+        "Electrostatic Potential and Capacitance",
+        "Current Electricity",
+        "Moving Charges and Magnetism",
+        "Magnetism and Matter",
+        "Electromagnetic Induction",
+        "Alternating Current",
+        "Electromagnetic Waves"
+      ],
+      "language": "english",
+      "id": "leph1",
+      "keywords": [
+        "physics",
+        "class 12",
+        "ncert",
+        "electric charges",
+        "electrostatics",
+        "current electricity",
+        "magnetism",
+        "electromagnetic induction",
+        "alternating current"
+      ],
+      "title": "Physics Part I"
+    },
+    {
+      "tags": ["chemistry", "class-12", "ncert", "cbse", "physical-chemistry"],
+      "bookCode": "lech1",
+      "className": "class-12",
+      "editionYear": 2023,
+      "subject": "chemistry",
+      "description": "NCERT Chemistry textbook for Class XII Part I. Covers the solid state, solutions, electrochemistry, chemical kinetics, and surface chemistry. Published by the National Council of Educational Research and Training.",
+      "chapterNames": [
+        "The Solid State",
+        "Solutions",
+        "Electrochemistry",
+        "Chemical Kinetics",
+        "Surface Chemistry"
+      ],
+      "language": "english",
+      "id": "lech1",
+      "keywords": [
+        "chemistry",
+        "class 12",
+        "ncert",
+        "solid state",
+        "solutions",
+        "electrochemistry",
+        "chemical kinetics",
+        "surface chemistry"
+      ],
+      "title": "Chemistry Part I"
+    },
+    {
+      "tags": [
+        "biology",
+        "class-12",
+        "ncert",
+        "cbse",
+        "genetics",
+        "reproduction"
+      ],
+      "bookCode": "lebo1",
+      "className": "class-12",
+      "editionYear": 2023,
+      "subject": "biology",
+      "description": "NCERT Biology textbook for Class XII. Covers reproduction in organisms, human reproduction, reproductive health, principles of inheritance, and molecular basis of inheritance. Published by the National Council of Educational Research and Training.",
+      "chapterNames": [
+        "Reproduction in Organisms",
+        "Sexual Reproduction in Flowering Plants",
+        "Human Reproduction",
+        "Reproductive Health",
+        "Principles of Inheritance and Variation",
+        "Molecular Basis of Inheritance"
+      ],
+      "language": "english",
+      "id": "lebo1",
+      "keywords": [
+        "biology",
+        "class 12",
+        "ncert",
+        "reproduction",
+        "genetics",
+        "inheritance",
+        "molecular biology"
+      ],
+      "title": "Biology"
+    },
+    {
+      "tags": [
+        "mathematics",
+        "class-10",
+        "ncert",
+        "cbse",
+        "algebra",
+        "geometry",
+        "trigonometry"
+      ],
+      "bookCode": "jemh1",
+      "className": "class-10",
+      "editionYear": 2023,
+      "subject": "mathematics",
+      "description": "NCERT Mathematics textbook for Class X. Covers real numbers, polynomials, linear equations, quadratic equations, arithmetic progressions, triangles, coordinate geometry, and trigonometry. Published by the National Council of Educational Research and Training.",
+      "chapterNames": [
+        "Real Numbers",
+        "Polynomials",
+        "Pair of Linear Equations in Two Variables",
+        "Quadratic Equations",
+        "Arithmetic Progressions",
+        "Triangles",
+        "Coordinate Geometry",
+        "Introduction to Trigonometry"
+      ],
+      "language": "english",
+      "id": "jemh1",
+      "keywords": [
+        "mathematics",
+        "maths",
+        "class 10",
+        "ncert",
+        "real numbers",
+        "polynomials",
+        "quadratic equations",
+        "trigonometry",
+        "coordinate geometry"
+      ],
+      "title": "Mathematics"
+    },
+    {
+      "tags": ["science", "class-10", "ncert", "cbse", "chemistry", "biology"],
+      "bookCode": "jesc1",
+      "className": "class-10",
+      "editionYear": 2023,
+      "subject": "science",
+      "description": "NCERT Science textbook for Class X. Covers chemical reactions, acids and bases, metals and non-metals, carbon compounds, and life processes. Published by the National Council of Educational Research and Training.",
+      "chapterNames": [
+        "Chemical Reactions and Equations",
+        "Acids, Bases and Salts",
+        "Metals and Non-metals",
+        "Carbon and its Compounds",
+        "Life Processes"
+      ],
+      "language": "english",
+      "id": "jesc1",
+      "keywords": [
+        "science",
+        "class 10",
+        "ncert",
+        "chemical reactions",
+        "acids bases",
+        "carbon compounds",
+        "life processes"
+      ],
+      "title": "Science"
+    },
+    {
+      "tags": ["science", "class-9", "ncert", "cbse", "chemistry", "biology"],
+      "bookCode": "iesc1",
+      "className": "class-9",
+      "editionYear": 2023,
+      "subject": "science",
+      "description": "NCERT Science textbook for Class IX. Covers matter, atoms and molecules, the structure of the atom, the fundamental unit of life, and tissues. Published by the National Council of Educational Research and Training.",
+      "chapterNames": [
+        "Matter in Our Surroundings",
+        "Is Matter Around Us Pure?",
+        "Atoms and Molecules",
+        "Structure of the Atom",
+        "The Fundamental Unit of Life",
+        "Tissues"
+      ],
+      "language": "english",
+      "id": "iesc1",
+      "keywords": [
+        "science",
+        "class 9",
+        "ncert",
+        "matter",
+        "atoms",
+        "molecules",
+        "cell",
+        "tissues"
+      ],
+      "title": "Science"
+    },
+    {
+      "tags": [
+        "mathematics",
+        "class-9",
+        "ncert",
+        "cbse",
+        "algebra",
+        "geometry"
+      ],
+      "bookCode": "iemh1",
+      "className": "class-9",
+      "editionYear": 2023,
+      "subject": "mathematics",
+      "description": "NCERT Mathematics textbook for Class IX. Covers number systems, polynomials, coordinate geometry, linear equations, Euclid's geometry, and lines and angles. Published by the National Council of Educational Research and Training.",
+      "chapterNames": [
+        "Number Systems",
+        "Polynomials",
+        "Coordinate Geometry",
+        "Linear Equations in Two Variables",
+        "Introduction to Euclid's Geometry",
+        "Lines and Angles"
+      ],
+      "language": "english",
+      "id": "iemh1",
+      "keywords": [
+        "mathematics",
+        "maths",
+        "class 9",
+        "ncert",
+        "number systems",
+        "polynomials",
+        "coordinate geometry",
+        "euclid",
+        "lines and angles"
+      ],
+      "title": "Mathematics"
+    }
+  ],
+  "generatedAt": "2026-06-14T23:38:57.5015889+05:30"
+}

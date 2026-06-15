@@ -1,0 +1,88 @@
+{
+  "subject": "biology",
+  "books": [
+    {
+      "bookCode": "lebo1",
+      "class": "class-12",
+      "subject": "biology",
+      "language": "english",
+      "title": "Biology",
+      "subtitle": "Textbook for Class XII",
+      "editionYear": 2023,
+      "numberOfChapters": 6,
+      "chapterNames": [
+        "Reproduction in Organisms",
+        "Sexual Reproduction in Flowering Plants",
+        "Human Reproduction",
+        "Reproductive Health",
+        "Principles of Inheritance and Variation",
+        "Molecular Basis of Inheritance"
+      ],
+      "chapterUrls": [
+        "https://ncert.nic.in/textbook/pdf/lebo101.pdf",
+        "https://ncert.nic.in/textbook/pdf/lebo102.pdf",
+        "https://ncert.nic.in/textbook/pdf/lebo103.pdf",
+        "https://ncert.nic.in/textbook/pdf/lebo104.pdf",
+        "https://ncert.nic.in/textbook/pdf/lebo105.pdf",
+        "https://ncert.nic.in/textbook/pdf/lebo106.pdf"
+      ],
+      "chapters": [
+        {
+          "number": 1,
+          "name": "Reproduction in Organisms",
+          "url": "https://ncert.nic.in/textbook/pdf/lebo101.pdf"
+        },
+        {
+          "number": 2,
+          "name": "Sexual Reproduction in Flowering Plants",
+          "url": "https://ncert.nic.in/textbook/pdf/lebo102.pdf"
+        },
+        {
+          "number": 3,
+          "name": "Human Reproduction",
+          "url": "https://ncert.nic.in/textbook/pdf/lebo103.pdf"
+        },
+        {
+          "number": 4,
+          "name": "Reproductive Health",
+          "url": "https://ncert.nic.in/textbook/pdf/lebo104.pdf"
+        },
+        {
+          "number": 5,
+          "name": "Principles of Inheritance and Variation",
+          "url": "https://ncert.nic.in/textbook/pdf/lebo105.pdf"
+        },
+        {
+          "number": 6,
+          "name": "Molecular Basis of Inheritance",
+          "url": "https://ncert.nic.in/textbook/pdf/lebo106.pdf"
+        }
+      ],
+      "pageCount": 260,
+      "tags": [
+        "biology",
+        "class-12",
+        "ncert",
+        "cbse",
+        "genetics",
+        "reproduction"
+      ],
+      "keywords": [
+        "biology",
+        "class 12",
+        "ncert",
+        "reproduction",
+        "genetics",
+        "inheritance",
+        "molecular biology"
+      ],
+      "description": "NCERT Biology textbook for Class XII. Covers reproduction in organisms, human reproduction, reproductive health, principles of inheritance, and molecular basis of inheritance. Published by the National Council of Educational Research and Training.",
+      "ncertClassCode": 12,
+      "ncertBookCode": 1,
+      "lastUpdated": "2024-04-01T00:00:00Z",
+      "isRationalised": false,
+      "downloadUrl": "https://ncert.nic.in/textbook/pdf/lebo1.pdf"
+    }
+  ],
+  "displayName": "Biology"
+}

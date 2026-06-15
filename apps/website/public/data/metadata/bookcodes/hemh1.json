@@ -1,0 +1,80 @@
+{
+  "bookCode": "hemh1",
+  "class": "class-12",
+  "subject": "mathematics",
+  "language": "english",
+  "title": "Mathematics Part I",
+  "subtitle": "Textbook for Class XII",
+  "editionYear": 2023,
+  "numberOfChapters": 6,
+  "chapterNames": [
+    "Relations and Functions",
+    "Inverse Trigonometric Functions",
+    "Matrices",
+    "Determinants",
+    "Continuity and Differentiability",
+    "Applications of Derivatives"
+  ],
+  "chapterUrls": [
+    "https://ncert.nic.in/textbook/pdf/lemh101.pdf",
+    "https://ncert.nic.in/textbook/pdf/lemh102.pdf",
+    "https://ncert.nic.in/textbook/pdf/lemh103.pdf",
+    "https://ncert.nic.in/textbook/pdf/lemh104.pdf",
+    "https://ncert.nic.in/textbook/pdf/lemh105.pdf",
+    "https://ncert.nic.in/textbook/pdf/lemh106.pdf"
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "name": "Relations and Functions",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh101.pdf"
+    },
+    {
+      "number": 2,
+      "name": "Inverse Trigonometric Functions",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh102.pdf"
+    },
+    {
+      "number": 3,
+      "name": "Matrices",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh103.pdf"
+    },
+    {
+      "number": 4,
+      "name": "Determinants",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh104.pdf"
+    },
+    {
+      "number": 5,
+      "name": "Continuity and Differentiability",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh105.pdf"
+    },
+    {
+      "number": 6,
+      "name": "Applications of Derivatives",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh106.pdf"
+    }
+  ],
+  "coverImage": "https://ncert.nic.in/textbook/cover/lemh1.jpg",
+  "pageCount": 280,
+  "fileSize": 5242880,
+  "sha256": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
+  "tags": ["mathematics", "class-12", "ncert", "cbse", "calculus", "algebra"],
+  "keywords": [
+    "mathematics",
+    "maths",
+    "class 12",
+    "ncert",
+    "relations",
+    "matrices",
+    "determinants",
+    "calculus",
+    "derivatives"
+  ],
+  "description": "NCERT Mathematics textbook for Class XII Part I. Covers relations and functions, inverse trigonometric functions, matrices, determinants, continuity and differentiability, and applications of derivatives. Published by the National Council of Educational Research and Training.",
+  "ncertClassCode": 12,
+  "ncertBookCode": 1,
+  "lastUpdated": "2024-04-01T00:00:00Z",
+  "isRationalised": false,
+  "downloadUrl": "https://ncert.nic.in/textbook/pdf/lemh1.pdf"
+}
