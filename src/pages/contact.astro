@@ -1,0 +1,49 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { ContactForm } from '@chirag127/oriz-ui'
+
+const web3formsKey = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? ''
+---
+
+<BaseLayout
+  title="Contact — Books"
+  description="Get in touch about the oriz Books library."
+  hideSidebar={true}
+>
+  <header class="container-prose page-head">
+    <p class="eyebrow"><a href="/">Books</a> / Contact</p>
+    <h1>Contact</h1>
+  </header>
+
+  <section class="container-prose prose">
+    <p class="lede">
+      Spotted a wrong link, a missing book, or a chapter that won't download
+      from <a href="https://ncert.nic.in/">ncert.nic.in</a>? Tell me about it.
+    </p>
+    <p>
+      Email is fastest:
+      <a href="mailto:whyiswhen@gmail.com"><strong>whyiswhen@gmail.com</strong></a>.
+      Or use the form below — it posts to Web3Forms, which forwards the message
+      to my inbox. We don't store anything on books.oriz.in.
+    </p>
+
+    <ContactForm client:load web3formsKey={web3formsKey} />
+
+    <p class="meta">
+      For privacy questions or DMCA notices, see the
+      <a href="/legal/grievance/">grievance officer</a> page (mandatory under
+      India's IT Rules 2021).
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head { padding-block: 3rem 1.5rem; border-bottom: 1px solid var(--color-border); }
+  .eyebrow { color: var(--color-fg-muted); font-size: 0.8125rem; margin: 0 0 0.5rem; }
+  .eyebrow a { color: var(--color-fg-muted); text-decoration: none; }
+  h1 { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 600; letter-spacing: -0.02em; margin: 0; }
+  .prose { padding-block: 2.5rem 4rem; color: var(--color-prose); line-height: 1.7; font-size: 1.0625rem; }
+  .prose .lede { font-size: 1.1875rem; color: var(--color-fg); margin: 0 0 1.5rem; }
+  .prose a { color: var(--color-accent); }
+  .meta { font-size: 0.875rem; color: var(--color-fg-muted); margin-top: 2rem; }
+</style>

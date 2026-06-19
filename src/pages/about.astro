@@ -1,0 +1,77 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro'
+---
+
+<BaseLayout
+  title="About — Books"
+  description="What books.oriz.in is and why it exists."
+  hideSidebar={true}
+>
+  <header class="container-prose page-head">
+    <p class="eyebrow"><a href="/">Books</a> / About</p>
+    <h1>About Books</h1>
+  </header>
+
+  <article class="container-prose prose">
+    <p class="lede">
+      <strong>Books</strong> is a directory of NCERT textbooks for India's
+      school curriculum (Class IX–XII). It is a static site — every page is
+      pre-built, every download is a direct link to
+      <a href="https://ncert.nic.in/">ncert.nic.in</a>. Nothing is hosted on
+      this domain.
+    </p>
+
+    <h2>Why this exists</h2>
+    <p>
+      The official NCERT site works, but it is slow, hard to navigate, and
+      its links break often. Books gives you a single grid you can filter by
+      class, subject, and language, with a chapter list and direct download
+      buttons on every page. No popups, no ads (yet), no required sign-in.
+    </p>
+
+    <h2>What you get</h2>
+    <ul>
+      <li>Full directory of NCERT textbooks with metadata.</li>
+      <li>One-click download of individual chapters or the merged full-book PDF.</li>
+      <li>Search across titles, subjects, chapters, and keywords.</li>
+      <li>Optional sign-in (shared with the rest of <a href="https://oriz.in/">oriz</a>) to bookmark books.</li>
+    </ul>
+
+    <h2>Where the data comes from</h2>
+    <p>
+      The catalogue is scraped from <code>ncert.nic.in</code> by a Playwright
+      pipeline in this repo's <code>scripts/</code> folder, normalised into
+      <code>public/data/metadata/books.json</code>, and committed back to git.
+      Every page on this site is rebuilt from that JSON.
+    </p>
+
+    <h2>oriz family</h2>
+    <p>
+      Books is one of ten sites in the <a href="https://oriz.in/">oriz</a>
+      family — see the family list in the footer or use the search box (⌘K)
+      in the header to jump between them.
+    </p>
+
+    <h2>Source code</h2>
+    <p>
+      MIT-licensed, hosted at
+      <a href="https://github.com/chirag127/oriz-books">github.com/chirag127/oriz-books</a>.
+      Issues and PRs welcome.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .page-head { padding-block: 3rem 1.5rem; border-bottom: 1px solid var(--color-border); }
+  .eyebrow { color: var(--color-fg-muted); font-size: 0.8125rem; margin: 0 0 0.5rem; }
+  .eyebrow a { color: var(--color-fg-muted); text-decoration: none; }
+  h1 { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 600; letter-spacing: -0.02em; margin: 0; }
+  .prose { padding-block: 2.5rem 4rem; color: var(--color-prose); line-height: 1.75; font-size: 1.0625rem; }
+  .prose .lede { font-size: 1.1875rem; color: var(--color-fg); margin: 0 0 2rem; }
+  .prose h2 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--color-fg); margin: 2.5rem 0 1rem; }
+  .prose p { margin: 0 0 1.25rem; }
+  .prose ul { padding-left: 1.5rem; margin: 0 0 1.25rem; }
+  .prose li { margin-bottom: 0.5rem; }
+  .prose a { color: var(--color-accent); }
+  .prose code { background: var(--color-bg-muted); padding: 0.125em 0.375em; border-radius: 0.25rem; font-size: 0.875em; }
+</style>

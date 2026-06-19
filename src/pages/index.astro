@@ -1,0 +1,71 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import BookGrid from '~/components/BookGrid.tsx'
+import { SITE_CONFIG } from '~/lib/siteConfig'
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_CONFIG.name,
+  url: SITE_CONFIG.origin,
+  description: SITE_CONFIG.description,
+  publisher: { '@type': 'Person', name: 'Chirag Singhal' },
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${SITE_CONFIG.origin}/search/?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+}
+---
+
+<BaseLayout
+  title={`${SITE_CONFIG.name} — ${SITE_CONFIG.tagline}`}
+  description={SITE_CONFIG.description}
+  jsonLd={jsonLd}
+>
+  <header class="container-page page-hero">
+    <p class="eyebrow">📚 oriz · Books</p>
+    <h1>NCERT textbooks, browsable.</h1>
+    <p class="lede">
+      A free, open directory of NCERT textbooks. Browse by class, subject, or
+      language. Download chapters individually or grab the merged whole-book
+      PDF straight from <a href="https://ncert.nic.in/">ncert.nic.in</a>.
+      No login. No paywall. No tracking beyond Cloudflare's anonymous analytics.
+    </p>
+    <p class="hero-cta">
+      <a href="/search/" class="btn-primary">Search the library →</a>
+    </p>
+  </header>
+
+  <section class="container-page page-grid">
+    <BookGrid client:load />
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero { padding-block: 2.5rem 2rem; border-bottom: 1px solid var(--color-border); }
+  .eyebrow { color: var(--color-fg-muted); font-size: 0.8125rem; margin: 0 0 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0;
+    line-height: 1.1;
+  }
+  .lede { color: var(--color-fg-muted); margin: 0.875rem 0 0; font-size: 1.0625rem; line-height: 1.65; max-width: 64ch; }
+  .lede a { color: var(--color-accent); }
+  .hero-cta { margin-top: 1.25rem; }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    padding-inline: 1.25rem;
+    background: var(--color-accent);
+    color: var(--color-accent-fg);
+    border-radius: var(--radius-button);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .page-grid { padding-block: 2rem 4rem; }
+</style>

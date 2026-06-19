@@ -1,0 +1,63 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro'
+
+const updated = '2026-06-19'
+---
+
+<BaseLayout title="Disclaimer — Books" description="What books.oriz.in is and isn't." hideSidebar={true}>
+  <header class="container-prose page-head">
+    <p class="eyebrow"><a href="/">Books</a> / <a href="/legal/">Legal</a> / Disclaimer</p>
+    <h1>Disclaimer</h1>
+    <p class="meta">Last updated: {updated}</p>
+  </header>
+
+  <article class="container-prose prose">
+    <p>
+      Everything on books.oriz.in is published in good faith for general
+      information only. Use it at your own risk.
+    </p>
+
+    <h2>NCERT is the source of truth</h2>
+    <p>
+      NCERT is the publisher and copyright holder of the textbooks indexed
+      here. Books does not host the PDFs — every download button links
+      directly to <code>ncert.nic.in</code>. If a download fails, the source
+      file at NCERT is the one that's broken; reach out via the
+      <a href="/contact/">contact form</a> and we'll either find an alternate
+      link or remove the listing.
+    </p>
+
+    <h2>Not professional advice</h2>
+    <p>
+      Books indexes school curriculum material for browsing convenience.
+      Nothing here constitutes academic, legal, medical, or career advice.
+      Consult a qualified professional for those.
+    </p>
+
+    <h2>External links</h2>
+    <p>
+      Every textbook page links to <code>ncert.nic.in</code> or other official
+      sources. We don't control their content or uptime, and inclusion is
+      not an endorsement.
+    </p>
+
+    <h2>Affiliate disclosure</h2>
+    <p>
+      Books does not currently use affiliate links. If that ever changes, the
+      links will be marked, and this page will be updated.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .page-head { padding-block: 3rem 1.5rem; border-bottom: 1px solid var(--color-border); }
+  .eyebrow { color: var(--color-fg-muted); font-size: 0.8125rem; margin: 0 0 0.5rem; }
+  .eyebrow a { color: var(--color-fg-muted); text-decoration: none; }
+  h1 { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 600; letter-spacing: -0.02em; margin: 0; }
+  .meta { color: var(--color-fg-soft); font-size: 0.875rem; margin: 0.5rem 0 0; }
+  .prose { padding-block: 2.5rem 4rem; color: var(--color-prose); line-height: 1.7; font-size: 1.0625rem; }
+  .prose h2 { font-family: var(--font-serif); font-size: 1.375rem; font-weight: 600; color: var(--color-fg); margin: 2rem 0 1rem; }
+  .prose p { margin: 0 0 1.25rem; }
+  .prose a { color: var(--color-accent); }
+  .prose code { background: var(--color-bg-muted); padding: 0.125em 0.375em; border-radius: 0.25rem; font-size: 0.875em; }
+</style>

@@ -3,11 +3,8 @@ compatibility_date = "2026-06-17"
 compatibility_flags = ["nodejs_compat"]
 
 [assets]
-directory = "./apps/website/dist"
+directory = "./dist"
 not_found_handling = "404-page"
 
 # Custom domain bound via dashboard:
 #   books.oriz.in -> oriz-books
-#
-# Note: this is a Turborepo monorepo. The website lives in apps/website
-# and builds to apps/website/dist. Run `pnpm build:website` before deploy.

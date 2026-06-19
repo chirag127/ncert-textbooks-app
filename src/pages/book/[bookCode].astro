@@ -1,0 +1,42 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import BookDetail from '~/components/BookDetail.tsx'
+import { loadBooks } from '~/lib/books'
+import type { BookMetadata } from '~/lib/types'
+import { SITE_CONFIG } from '~/lib/siteConfig'
+
+export async function getStaticPaths() {
+  const books = loadBooks()
+  return books.map((book) => ({
+    params: { bookCode: book.bookCode },
+    props: { book },
+  }))
+}
+
+interface Props {
+  book: BookMetadata
+}
+
+const { book } = Astro.props as Props
+
+const title = `${book.title} — ${SITE_CONFIG.name}`
+const description = book.description ?? `${book.title} (${book.class.replace('class-', 'Class ')}, NCERT). Download chapter or full-book PDFs from ncert.nic.in.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Book',
+  name: book.title,
+  bookFormat: 'https://schema.org/EBook',
+  inLanguage: book.language,
+  numberOfPages: book.numberOfChapters,
+  description,
+  url: `${SITE_CONFIG.origin}/book/${book.bookCode}/`,
+  publisher: { '@type': 'Organization', name: 'NCERT' },
+}
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <div class="container-page">
+    <BookDetail book={book} client:load />
+  </div>
+</BaseLayout>

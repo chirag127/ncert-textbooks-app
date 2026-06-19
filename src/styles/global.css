@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+@import '@chirag127/oriz-ui/styles';
+@import '@chirag127/oriz-ui/components.css';
+
+/* Books-specific minor overrides only.
+   The shared design tokens, container utilities, sidebar styles, etc.
+   all come from @chirag127/oriz-ui. */
