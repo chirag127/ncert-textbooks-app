@@ -1,0 +1,61 @@
+---
+/*
+ * PunchHole — the brass punch-hole at the bottom-center of every catalogue
+ * card. The visual click affordance for the card. SVG circle in brass at
+ * 60% opacity (80% on hover) with a nested 8px-radius dark inner circle
+ * that suggests light passing through a real punched hole to the desk
+ * below.
+ *
+ * NO scale animation. ONLY opacity shift on hover. This is the v2-locked
+ * site signature paired with the 6px subject-colour band on the left edge.
+ *
+ * Diameter: 18px (per spec). Inner: r=4 (8px diameter) Ink Block @ 35%.
+ *
+ * Sized & positioned by the consumer; this component just renders the
+ * SVG. Default `size={18}` honours the spec.
+ */
+
+interface Props {
+  size?: number
+  /** Optional aria-label override; defaults to decorative. */
+  label?: string
+  class?: string
+}
+
+const { size = 18, label, class: className = '' } = Astro.props
+---
+
+<svg
+  class={`punchhole ${className}`.trim()}
+  width={size}
+  height={size}
+  viewBox="0 0 18 18"
+  xmlns="http://www.w3.org/2000/svg"
+  role={label ? 'img' : undefined}
+  aria-label={label}
+  aria-hidden={label ? undefined : 'true'}>
+  <circle cx="9" cy="9" r="9" class="punchhole-ring"></circle>
+  <circle cx="9" cy="9" r="4" class="punchhole-inner"></circle>
+</svg>
+
+<style>
+  .punchhole {
+    display: block;
+    flex: none;
+  }
+  .punchhole-ring {
+    fill: var(--brass);
+    fill-opacity: 0.6;
+    transition: fill-opacity 120ms linear;
+  }
+  .punchhole-inner {
+    fill: var(--paper);
+    fill-opacity: 0.95;
+  }
+
+  /* Hover affordance — only opacity changes, no scale, no translate. */
+  :where(a, button):hover .punchhole-ring,
+  :where(a, button):focus-visible .punchhole-ring {
+    fill-opacity: 0.85;
+  }
+</style>

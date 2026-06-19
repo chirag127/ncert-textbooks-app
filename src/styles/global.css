@@ -1,7 +1,338 @@
 @import 'tailwindcss';
-@import '@chirag127/oriz-ui/styles';
-@import '@chirag127/oriz-ui/components.css';
 
-/* Books-specific minor overrides only.
-   The shared design tokens, container utilities, sidebar styles, etc.
-   all come from @chirag127/oriz-ui. */
+/*
+ * oriz-books — v2 catalogue-on-wooden-desk tokens
+ *
+ * Surface: Ink Block #0E1014 (dark, the desk).
+ * Cards: Card Bone #F4EDE0 (warm aged paper).
+ * Primary accent: Cinnabar #E5482A (red, justified by NCERT cover heritage).
+ *
+ * 6 hex max per the v2 brief. Subject bands consume Cinnabar / Indigo Stamp /
+ * Brass / Graphite. Brass also doubles as the punch-hole.
+ *
+ * No vermilion reserve here — red IS primary.
+ */
+
+@theme {
+  --font-display: 'IBM Plex Serif', 'GT Sectra', 'Source Serif 4', Georgia, serif;
+  --font-sans:
+    'IBM Plex Sans', 'IBM Plex Sans Devanagari', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --container-spine: 1120px;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+
+    /* Surface tokens — dark catalogue-drawer desk. */
+    --paper: #0e1014; /* Ink Block — the desk surface */
+    --paper-deep: #07090c; /* OLED variant */
+    --card: #f4ede0; /* Card Bone — catalogue card face */
+    --card-shade: #ebe2d2; /* aged variant for hover-row stripes */
+    --ink: #f4ede0; /* primary text on dark */
+    --ink-mute: #8a8579; /* pencil grey — secondary text on dark */
+    --rule: #2a2722; /* hairline on dark */
+
+    /* Subject + accent palette. */
+    --cinnabar: #e5482a; /* primary — Maths band, active filter, page underline */
+    --indigo: #2e3a8c; /* Indigo Stamp — Sciences band, link on Card Bone */
+    --brass: #a89968; /* Brass — punch-hole, Social Studies band */
+    --graphite: #3a3a3a; /* body text on Card Bone, Languages band */
+    --graphite-soft: #5a5a5a;
+
+    /* Card-context aliases (text painted ON Card Bone). */
+    --on-card: #3a3a3a;
+    --on-card-mute: #5a5a5a;
+    --on-card-rule: rgba(58, 58, 58, 0.15);
+
+    /* The shared AccountPanel + ContactForm styles reference --mustard /
+       --vermilion / --ledger / --highlighter (oriz-home tokens). Map them
+       to this site's palette so borrowed selectors still resolve. */
+    --mustard: var(--cinnabar);
+    --vermilion: var(--cinnabar);
+    --ledger: var(--brass);
+    --highlighter: var(--cinnabar);
+  }
+
+  /* Light mode — invert paper to Card Bone, ink to Graphite. */
+  @media (prefers-color-scheme: light) {
+    :root {
+      color-scheme: light;
+      --paper: #f4ede0;
+      --paper-deep: #ebe2d2;
+      --card: #faf6ec;
+      --card-shade: #efe7d6;
+      --ink: #1a1614;
+      --ink-mute: #5a5141;
+      --rule: #d6cdb8;
+      --cinnabar: #c43818;
+      --indigo: #1f2a72;
+      --brass: #8c7d4d;
+      --graphite: #1a1614;
+      --graphite-soft: #4a4035;
+      --on-card: #1a1614;
+      --on-card-mute: #4a4035;
+      --on-card-rule: rgba(26, 22, 20, 0.15);
+    }
+  }
+
+  @media (prefers-contrast: more) {
+    :root {
+      --paper: var(--paper-deep);
+    }
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    font-feature-settings:
+      'kern' 1,
+      'liga' 1;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    overflow-y: scroll;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Mono utility — slashed zero (ss20), tabular figures, no ligatures. */
+  code,
+  kbd,
+  pre,
+  samp,
+  .mono {
+    font-family: var(--font-mono);
+    font-feature-settings:
+      'tnum' 1,
+      'zero' 1,
+      'ss20' 1,
+      'calt' 0;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--cinnabar) 30%, transparent);
+    color: var(--ink);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* Catalogue spine — wider than oriz-home (cards need width). */
+.spine {
+  max-width: var(--container-spine);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2rem);
+}
+
+/* Narrow column for prose pages (about, legal, contact). */
+.spine-prose {
+  max-width: 720px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2rem);
+}
+
+.hairline {
+  height: 1px;
+  background: var(--rule);
+  border: 0;
+  margin: 0;
+}
+
+/* Page head + prose. */
+.page-head {
+  padding-block: clamp(2rem, 6vw, 3.5rem) 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.page-head .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: 0 0 0.875rem;
+  font-feature-settings:
+    'tnum' 1,
+    'zero' 1,
+    'ss20' 1,
+    'calt' 0;
+}
+.page-head .eyebrow a {
+  color: var(--ink-mute);
+  text-decoration: none;
+}
+.page-head .eyebrow a:hover {
+  color: var(--cinnabar);
+}
+.page-head h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.005em;
+  margin: 0;
+  color: var(--ink);
+}
+.page-head .lede {
+  margin: 1rem 0 0;
+  color: var(--ink-mute);
+  font-size: 1.0625rem;
+  max-width: 60ch;
+}
+.page-head .meta {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-feature-settings:
+    'tnum' 1,
+    'zero' 1,
+    'ss20' 1,
+    'calt' 0;
+}
+
+.prose {
+  padding-block: 2.5rem 4rem;
+  color: var(--ink);
+  line-height: 1.75;
+  font-size: 1.0625rem;
+  font-family: var(--font-sans);
+}
+.prose .lede {
+  font-size: 1.1875rem;
+  color: var(--ink);
+  margin: 0 0 2rem;
+}
+.prose h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin: 2.5rem 0 1rem;
+}
+.prose h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1875rem;
+  color: var(--ink);
+  margin: 1.75rem 0 0.625rem;
+}
+.prose p {
+  margin: 0 0 1.25rem;
+  color: color-mix(in oklab, var(--ink) 92%, var(--paper));
+}
+.prose a {
+  color: var(--cinnabar);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in oklab, var(--cinnabar) 50%, transparent);
+}
+.prose a:hover {
+  text-decoration-color: var(--cinnabar);
+}
+.prose strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.5rem;
+  margin: 0 0 1.25rem;
+}
+.prose li {
+  margin-bottom: 0.5rem;
+}
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.125em 0.375em;
+  background: color-mix(in oklab, var(--ink-mute) 20%, transparent);
+  color: var(--ink);
+  border-radius: 0;
+  font-feature-settings:
+    'tnum' 1,
+    'zero' 1,
+    'ss20' 1,
+    'calt' 0;
+}
+.prose blockquote {
+  border-left: 2px solid var(--rule);
+  padding-left: 1rem;
+  margin-left: 0;
+  color: var(--ink-mute);
+  font-style: italic;
+}
+.prose hr {
+  height: 1px;
+  background: var(--rule);
+  border: 0;
+  margin: 2.5rem 0;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--cinnabar);
+  color: var(--card);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/*
+ * PRINT — book detail. Cover + spec sidebar + chapter list stay; chrome,
+ * filters, download buttons hide. One A4 per book where possible.
+ */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+  .header,
+  .footer,
+  .filter-rail,
+  .bd-actions,
+  .bd-crumbs,
+  .skip-link,
+  [data-no-print] {
+    display: none !important;
+  }
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+  .bd-cover {
+    border-color: black !important;
+  }
+  .bd-grid {
+    grid-template-columns: 200px 1fr 180px !important;
+    gap: 1rem !important;
+  }
+  .bd-chapter:hover {
+    background: transparent !important;
+  }
+  .bd-chapter:hover .leader {
+    opacity: 1 !important;
+  }
+}

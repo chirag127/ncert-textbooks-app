@@ -1,6 +1,20 @@
 ---
-import BaseLayout from '~/layouts/BaseLayout.astro'
 import BookGrid from '~/components/BookGrid.tsx'
+/*
+ * Home — catalogue-card grid on the wooden desk surface.
+ *
+ * Per the v2 brief:
+ *   - Filter rail left (Class, Subject, Medium with subject swatches)
+ *   - Card grid right, 5×3 cards on a typical viewport, 280×168 catalogue
+ *     ratio, 24px gap
+ *   - Eyebrow + page title `Class — Subject` style above the grid (the
+ *     spec calls for `Class 8 — Science` H1 styling but on the index we
+ *     use the catalogue title)
+ *
+ * NO hero illustration of stacked books, NO graduation cap, NO "Featured /
+ * Trending" carousel. This page IS the catalogue.
+ */
+import BaseLayout from '~/layouts/BaseLayout.astro'
 import { SITE_CONFIG } from '~/lib/siteConfig'
 
 const jsonLd = {
@@ -12,7 +26,7 @@ const jsonLd = {
   publisher: { '@type': 'Person', name: 'Chirag Singhal' },
   potentialAction: {
     '@type': 'SearchAction',
-    target: `${SITE_CONFIG.origin}/search/?q={search_term_string}`,
+    target: `${SITE_CONFIG.origin}/?q={search_term_string}`,
     'query-input': 'required name=search_term_string',
   },
 }
@@ -23,49 +37,52 @@ const jsonLd = {
   description={SITE_CONFIG.description}
   jsonLd={jsonLd}
 >
-  <header class="container-page page-hero">
-    <p class="eyebrow">📚 oriz · Books</p>
-    <h1>NCERT textbooks, browsable.</h1>
-    <p class="lede">
-      A free, open directory of NCERT textbooks. Browse by class, subject, or
-      language. Download chapters individually or grab the merged whole-book
-      PDF straight from <a href="https://ncert.nic.in/">ncert.nic.in</a>.
-      No login. No paywall. No tracking beyond Cloudflare's anonymous analytics.
-    </p>
-    <p class="hero-cta">
-      <a href="/search/" class="btn-primary">Search the library →</a>
-    </p>
-  </header>
+  <div class="spine">
+    <header class="cat-head">
+      <p class="eyebrow mono">NCERT · CLASS I — XII · ENGLISH · हिंदी</p>
+      <h1>The catalogue.</h1>
+      <p class="lede">
+        A flat directory of NCERT textbooks. Filter by class, subject, and
+        medium; click a card to open chapters and the merged-book PDF on
+        ncert.nic.in. No popups, no paywall, no required sign-in.
+      </p>
+    </header>
 
-  <section class="container-page page-grid">
     <BookGrid client:load />
-  </section>
+  </div>
 </BaseLayout>
 
 <style>
-  .page-hero { padding-block: 2.5rem 2rem; border-bottom: 1px solid var(--color-border); }
-  .eyebrow { color: var(--color-fg-muted); font-size: 0.8125rem; margin: 0 0 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
-  h1 {
-    font-family: var(--font-serif);
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 600;
-    letter-spacing: -0.02em;
+  .cat-head {
+    padding-block: clamp(1.5rem, 4vw, 2.5rem) 1.25rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .eyebrow {
+    margin: 0 0 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    font-feature-settings:
+      'tnum' 1,
+      'zero' 1,
+      'ss20' 1,
+      'calt' 0;
+  }
+  .cat-head h1 {
     margin: 0;
-    line-height: 1.1;
-  }
-  .lede { color: var(--color-fg-muted); margin: 0.875rem 0 0; font-size: 1.0625rem; line-height: 1.65; max-width: 64ch; }
-  .lede a { color: var(--color-accent); }
-  .hero-cta { margin-top: 1.25rem; }
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    height: 40px;
-    padding-inline: 1.25rem;
-    background: var(--color-accent);
-    color: var(--color-accent-fg);
-    border-radius: var(--radius-button);
+    font-family: var(--font-display);
     font-weight: 500;
-    text-decoration: none;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    letter-spacing: -0.005em;
+    line-height: 1.05;
+    color: var(--ink);
   }
-  .page-grid { padding-block: 2rem 4rem; }
+  .lede {
+    margin: 1rem 0 0;
+    color: var(--ink-mute);
+    max-width: 60ch;
+    font-size: 1.0625rem;
+  }
 </style>

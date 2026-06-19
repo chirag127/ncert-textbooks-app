@@ -1,9 +1,9 @@
 ---
-import BaseLayout from '~/layouts/BaseLayout.astro'
 import BookDetail from '~/components/BookDetail.tsx'
+import BaseLayout from '~/layouts/BaseLayout.astro'
 import { loadBooks } from '~/lib/books'
-import type { BookMetadata } from '~/lib/types'
 import { SITE_CONFIG } from '~/lib/siteConfig'
+import type { BookMetadata } from '~/lib/types'
 
 export async function getStaticPaths() {
   const books = loadBooks()
@@ -20,7 +20,9 @@ interface Props {
 const { book } = Astro.props as Props
 
 const title = `${book.title} — ${SITE_CONFIG.name}`
-const description = book.description ?? `${book.title} (${book.class.replace('class-', 'Class ')}, NCERT). Download chapter or full-book PDFs from ncert.nic.in.`
+const description =
+  book.description ??
+  `${book.title} (${book.class.replace('class-', 'Class ')}, NCERT). Download chapter or full-book PDFs from ncert.nic.in.`
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -36,7 +38,7 @@ const jsonLd = {
 ---
 
 <BaseLayout title={title} description={description} jsonLd={jsonLd}>
-  <div class="container-page">
+  <div class="spine">
     <BookDetail book={book} client:load />
   </div>
 </BaseLayout>
