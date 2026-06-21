@@ -1,12 +1,3 @@
-/*
- * AccountPanel — local copy of @chirag127/auth-ui's AccountPanel, with
- * markup that emits the canonical `data-oriz-account-*` selector hooks
- * documented in packages/auth-ui/src/AccountPanel.tsx.
- *
- * Why local: see oriz-home/src/components/AccountPanel.tsx header comment.
- * Sister sites copy this file verbatim — the hook names are the contract.
- * CSS in src/styles/oriz-ui-overrides.css applies the site palette.
- */
 import {
   GithubAuthProvider,
   GoogleAuthProvider,
