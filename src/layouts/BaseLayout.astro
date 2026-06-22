@@ -2,20 +2,25 @@
 /*
  * BaseLayout — v2 dark catalogue surface.
  *
- * Per the v2 brief:
- *   - Surface: Ink Block #0E1014 (the wooden desk, flat — no texture image)
- *   - Display: IBM Plex Serif (NOT Fraunces — Fraunces is reserved for blog + finance)
- *   - Body:    IBM Plex Sans (Latin) + IBM Plex Sans Devanagari (Hindi/regional)
- *   - Mono:    JetBrains Mono with `font-feature-settings: "ss20"` (slashed zero)
- *
- * Drops: oriz-ui style imports (preflight.js / styles / components.css), the
- * SiteSidebar component, and the React HeaderControls cluster. Chrome is
- * zero-React.
+ * Chrome composition (per locked policy):
+ *   - Header:    LOCAL (~/components/Header.astro) — fully divergent per-app
+ *                with class/subject filter toggle for the home filter rail.
+ *   - Sidebar:   @chirag127/astro-chrome/Sidebar.astro — shared drawer shell,
+ *                per-app slot content (AppSidebarContent → class/subject nav).
+ *   - Footer:    @chirag127/astro-chrome/Footer.astro — shared mega-sitemap.
+ *   - BottomBar: @chirag127/astro-chrome/BottomBar.astro — shared structure,
+ *                per-app icons (Home/Classes/Search/Downloads/Menu).
  */
 import '~/styles/global.css'
 import '~/styles/oriz-ui-overrides.css'
-import Layout from '@chirag127/astro-chrome/Layout.astro'
+import '@chirag127/astro-shell/tokens.css'
+import Header from '~/components/Header.astro'
+import AppSidebarContent from '~/components/AppSidebarContent.astro'
+import Sidebar from '@chirag127/astro-chrome/Sidebar.astro'
+import Footer from '@chirag127/astro-chrome/Footer.astro'
+import BottomBar from '@chirag127/astro-chrome/BottomBar.astro'
 import { SITE_CONFIG } from '~/lib/siteConfig'
+import { bottomBarActions } from '~/data/bottombar-actions'
 
 interface Props {
   title?: string
@@ -37,13 +42,6 @@ const {
 } = Astro.props
 
 const beaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN
-const bottomBarActions = [
-  { icon: '⌂', label: 'Home', href: 'https://oriz.in/' },
-  { icon: '✎', label: 'Blog', href: 'https://blog.oriz.in/' },
-  { icon: '⚒', label: 'Tools', href: 'https://oriz.in/tools/' },
-  { icon: 'ℹ', label: 'About', href: '/about/' },
-]
-import '@chirag127/astro-shell/tokens.css'
 ---
 
 <!doctype html>
@@ -99,9 +97,25 @@ import '@chirag127/astro-shell/tokens.css'
     {hideHeader ? (
       <main id="main"><slot /></main>
     ) : (
-      <Layout bottomBarActions={bottomBarActions}>
-        <slot />
-      </Layout>
+      <>
+        <Header />
+        <div class="layout-body">
+          <Sidebar>
+            <AppSidebarContent />
+          </Sidebar>
+          <main id="main" class="layout-main"><slot /></main>
+        </div>
+        <Footer />
+        <BottomBar actions={bottomBarActions} />
+      </>
     )}
+    <style>
+      .layout-body { display: flex; align-items: flex-start; }
+      .layout-main { flex: 1 1 auto; min-width: 0; min-height: 50vh; }
+      @media (max-width: 767px) {
+        .layout-body { display: block; }
+        .layout-main { padding-bottom: 64px; }
+      }
+    </style>
   </body>
 </html>

@@ -1,0 +1,50 @@
+---
+/*
+ * AppSidebarContent — per-app sidebar slot content for oriz · books.
+ * Lists NCERT class groups (Pre-K, 1–5, 6–10, 11–12) and subject quick links.
+ */
+const classes = [
+  { label: 'Pre-Primary', items: [{ href: '/pre-k/', label: 'Pre-K' }] },
+  { label: 'Primary (1-5)', items: [1, 2, 3, 4, 5].map((c) => ({ href: `/class/${c}/`, label: `Class ${c}` })) },
+  { label: 'Middle/Secondary (6-10)', items: [6, 7, 8, 9, 10].map((c) => ({ href: `/class/${c}/`, label: `Class ${c}` })) },
+  { label: 'Senior Secondary (11-12)', items: [11, 12].map((c) => ({ href: `/class/${c}/`, label: `Class ${c}` })) },
+  {
+    label: 'Subjects',
+    items: ['Maths', 'Science', 'English', 'Hindi', 'Social Studies'].map((s) => ({
+      href: `/subject/${s.toLowerCase().replace(/ /g, '-')}/`,
+      label: s,
+    })),
+  },
+]
+---
+{classes.map((g) => (
+  <section class="sb-group">
+    <h3>{g.label}</h3>
+    <ul>
+      {g.items.map((i) => (
+        <li><a href={i.href}>{i.label}</a></li>
+      ))}
+    </ul>
+  </section>
+))}
+<style>
+  .sb-group { margin-bottom: 16px; }
+  .sb-group h3 {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mute, var(--graphite-soft));
+    margin: 0 0 6px;
+  }
+  .sb-group ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+  .sb-group a {
+    display: block;
+    padding: 4px 6px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 13px;
+    border-left: 2px solid transparent;
+  }
+  .sb-group a:hover { border-left-color: var(--cinnabar); color: var(--cinnabar); }
+</style>
