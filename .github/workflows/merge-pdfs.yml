@@ -25,7 +25,7 @@ jobs:
             3. Run: qpdf --empty --pages chapter*.pdf -- {class}-{subject}-{lang}.pdf
             4. Upload all PDFs as a GitHub Release.
           " > out/README.txt
-      - uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v3
         with:
           tag_name: v0-stub
           name: 'NCERT merged PDFs (stub)'
