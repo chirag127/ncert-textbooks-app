@@ -48,7 +48,7 @@ jobs:
         run: tar -czf "ncert-dist-${{ steps.meta.outputs.tag }}.tar.gz" -C dist .
 
       - name: Publish prerelease
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.meta.outputs.tag }}
           name: ${{ steps.meta.outputs.tag }}
